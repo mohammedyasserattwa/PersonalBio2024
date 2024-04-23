@@ -1,0 +1,161 @@
+:root {
+    --green: #15ff00;
+  }
+  
+  .app-about-me {
+    width: 100%;
+    /* height: 100%; */
+    padding: 0 50px;
+    color: white;
+    overflow: hidden;
+    
+  }
+
+  .about-me-layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    overflow: hidden;
+  }
+  
+  .app-about-me p {
+    width: 50%;
+    font-size: 19px;
+  }
+  
+  .app-about-me h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .app-about-me h3 {
+    font-size: 25px;
+    font-weight: 700;
+    width: 50%;
+  }
+  
+  .strong {
+    font-weight: 700;
+    color: var(--green);
+  }
+
+  .profile-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-image-wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #15ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.download-cv-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.download-cv-container a{
+    text-decoration: none;
+    color: white;
+    background-color: #15ff00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: background-color 0.5s ease;
+}
+
+.download-cv-container a:hover{
+    background-color: black;
+}
+
+
+  
+  @media screen and (max-width: 1024px) {
+    .app-about-me {
+      padding: 0 30px;
+    }
+  
+    .app-about-me p {
+      width: 60%;
+      font-size: 17px;
+    }
+  
+    .app-about-me h1 {
+      font-size: 40px;
+    }
+  
+    .app-about-me h3 {
+      font-size: 22px;
+      width: 60%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .app-about-me {
+      padding: 0 20px;
+    }
+  
+    .app-about-me p {
+      width: 70%;
+      font-size: 16px;
+    }
+  
+    .app-about-me h1 {
+      font-size: 35px;
+    }
+  
+    .app-about-me h3 {
+      font-size: 20px;
+      width: 70%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .app-about-me {
+      padding: 20px 10px;
+    }
+
+    .about-me-layout{
+        display: block;
+        margin-top: 10px;
+        padding: 0 20px;
+    }
+  
+    .app-about-me p {
+      width: 100%;
+      font-size: 14px;
+      
+    }
+  
+    .app-about-me h1 {
+      font-size: 30px;
+    }
+  
+    .app-about-me h3 {
+      font-size: 18px;
+      width: 100%;
+    }
+  }

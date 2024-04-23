@@ -1,0 +1,74 @@
+:root {
+  --green: #15ff00;
+}
+
+.skill-card {
+  background-color: #0c0c0c;
+  border-radius: 8px;
+  padding: 20px;
+  transition: all 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  margin: 10px 0;
+  width: 84%;
+  height: 150px;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  height: 45%;
+  margin: 20px 0;
+}
+
+.skill-icon {
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+.skill-header {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.skill-languages {
+  display: none;
+  flex-wrap: wrap;
+}
+
+.skill-language {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 7px;
+  background-color: #222222;
+  overflow-x: auto;
+}
+
+.skill-card.hovered .skill-languages {
+  display: flex;
+}
+
+.strong {
+  font-weight: 700;
+  color: var(--green);
+}
+
+@media screen and (min-width: 768px) {
+  .skill-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .skill-card {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skill-card {
+    width: calc(25% - 20px);
+  }
+}
